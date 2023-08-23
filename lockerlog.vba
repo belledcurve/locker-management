@@ -24,7 +24,7 @@ Sub visit()
 	Dim targetCell As Range
 		Set targetCell = f3log.Cells(btnCell.Row, 4)
 
-	Do While targetCell.Value <> ""	' while loop while targetCell.Value != N/A
+	Do While targetCell.Value <> ""	' while loop while targetCell.Value != null
 
 		If targetCell.Value = Date Then
 			MsgBox "Error: today's log has been already updated", vbExclamation, "Duplicate Date"
